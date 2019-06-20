@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.RegisterActivity">
+
+
+    <include layout="@layout/nav_bar"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marginSize"
+        android:layout_marginBottom="30dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="@dimen/navBarHeight"
+            android:layout_height="@dimen/navBarHeight"
+            android:src="@mipmap/picture_phone"
+
+            />
+        <EditText
+            android:id="@+id/input_phone"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:inputType="phone"
+            android:hint="请输入手机号"
+            android:cursorVisible="false"
+            />
+    </LinearLayout>
+    <View
+        style="@style/line"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="@dimen/navBarHeight"
+            android:layout_height="@dimen/navBarHeight"
+            android:src="@mipmap/picture_suo"
+
+            />
+        <EditText
+            android:id="@+id/input_password"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="请输入密码"
+            android:cursorVisible="false"
+            android:password="true"
+
+
+            />
+    </LinearLayout>
+    <View
+        style="@style/line"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="@dimen/navBarHeight"
+            android:layout_height="@dimen/navBarHeight"
+            android:src="@mipmap/picture_suo"
+
+            />
+        <EditText
+            android:id="@+id/input_password_confirm"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="请确认密码"
+            android:cursorVisible="false"
+            android:password="true"
+
+
+            />
+    </LinearLayout>
+    <View
+        style="@style/line"
+        />
+
+    <Button
+        style="@style/commitBtn"
+        android:text="注册"
+        android:onClick="onRegisterClick"
+        />
+</LinearLayout>

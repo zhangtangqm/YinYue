@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--fromXDelta:初始位置，从100%的位置从右到左移动到0%的位置;duration表示动画时间-->
+    <translate android:fromXDelta="100%" android:toXDelta="0%" android:duration="@integer/anim_duration"/>
+</set>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="@android:anim/linear_interpolator"
+    >
+<!--旋转动画：fromDegrees表示起点,duration:时间，pivotX，pivotY确定中心点,repeatCount:一直转动-->
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="360"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="@integer/play_muusic_anim_duration"
+        android:repeatCount="infinite"
+        />
+</set>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+<!--打开界面时原来的Activity执行的动画-->
+
+    <!--fromXScale初始值大小，fromYScale初始值高度度，toXScale结束状态的宽度-->
+    <scale android:fromXScale="1.0" android:fromYScale="1.0" android:toXScale="0.8" android:toYScale="0.8" android:pivotX="50%" android:pivotY="50%" android:duration="@integer/anim_duration"/>
+</set>

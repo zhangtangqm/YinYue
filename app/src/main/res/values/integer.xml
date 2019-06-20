@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="anim_duration">200</integer>>
+
+    <!--圆盘转动-->
+    <integer name="play_muusic_anim_duration">10000</integer>>
+    <!--指针转动-->
+    <integer name="play_needle_anim_duration">600</integer>>
+</resources>
