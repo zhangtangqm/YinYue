@@ -25,7 +25,8 @@
         <activity android:name=".activities.AddRecordActivity" />
         <activity android:name=".activities.ShowRecordListActivity" />
         <activity android:name=".activities.ReadActivity" />
-        <activity android:name=".activities.FashionListActivity"></activity>
+        <activity android:name=".activities.FashionListActivity" />
+        <activity android:name=".activities.BookListActivity"></activity>
     </application>
 
 </manifest>

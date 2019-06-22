@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.BookListActivity">
+
+    <include layout="@layout/nav_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/marginSize"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/book_a"
+            android:id="@+id/bookList_a"
+            android:onClick="onBookAClick"
+            />
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+          <TextView
+              android:layout_width="180dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="80dp"
+              android:layout_gravity="center"
+              android:text="    图书网："
+              android:textSize="22dp"
+              />
+          <TextView
+              android:layout_width="180dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:text="    和心灵对话"
+              android:textSize="22dp"
+              />
+
+      </LinearLayout>
+
+    </LinearLayout>
+    <View
+        style="@style/line"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/marginSize"
+        android:orientation="horizontal"
+        >
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="80dp"
+               android:layout_gravity="center"
+               android:text="当当读书："
+               android:textSize="22dp"
+               />
+           <TextView
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:text="寻找另一个自己"
+               android:textSize="22dp"
+               />
+
+       </LinearLayout>
+
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/book_b"
+            android:id="@+id/bookList_b"
+            android:onClick="onBookBClick"
+            />
+    </LinearLayout>
+</LinearLayout>

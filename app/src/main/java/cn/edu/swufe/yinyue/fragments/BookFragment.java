@@ -1,6 +1,7 @@
 package cn.edu.swufe.yinyue.fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import cn.edu.swufe.yinyue.R;
+import cn.edu.swufe.yinyue.activities.BookListActivity;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -66,6 +69,23 @@ public class BookFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_book, container, false);
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        CircleImageView button = (CircleImageView) getActivity().findViewById(R.id.book);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),BookListActivity.class);
+                startActivity(intent);
+
+
+            }
+
+
+        });
     }
 
     // TODO: Rename method, update argument and hook method into UI event
