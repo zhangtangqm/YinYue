@@ -9,6 +9,7 @@ import android.widget.EditText;
 
 import cn.edu.swufe.yinyue.activities.AddRecordActivity;
 import cn.edu.swufe.yinyue.activities.BaseAcitivity;
+import cn.edu.swufe.yinyue.activities.MusicActivity;
 import cn.edu.swufe.yinyue.activities.ReadActivity;
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -42,6 +43,10 @@ public class MainActivity extends BaseAcitivity {
     }
     public void onImageBClick(View  v){
         Intent intent=new Intent(this,AddRecordActivity.class);
+        startActivity(intent);
+    }
+    public void onImageCClick(View v){
+        Intent intent=new Intent(this,MusicActivity.class);
         startActivity(intent);
     }
 }
