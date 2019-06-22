@@ -30,7 +30,8 @@
         <activity android:name=".activities.FashionListActivity" />
         <activity android:name=".activities.BookListActivity" />
         <activity android:name=".activities.PhotoListActivity" />
-        <activity android:name=".activities.MusicActivity"></activity>
+        <activity android:name=".activities.MusicActivity" />
+        <activity android:name=".activities.PlayMusicActivity"></activity>
     </application>
 
 </manifest>

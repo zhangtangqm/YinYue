@@ -12,7 +12,7 @@
    <LinearLayout
        android:layout_width="wrap_content"
        android:orientation="horizontal"
-       android:layout_height="150dp">
+       android:layout_height="140dp">
 <de.hdodenhof.circleimageview.CircleImageView
     android:layout_width="140dp"
     android:layout_height="140dp"
@@ -20,18 +20,42 @@
     android:id="@+id/read"
     android:onClick="onButtonItemClick"
     />
-<TextView
-    android:layout_width="190dp"
-    android:layout_height="wrap_content"
-    android:layout_marginLeft="50dp"
-    android:layout_gravity="center"
-    android:text="阅读是心灵的旅行"
-    />
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+
+           <TextView
+               android:layout_width="190dp"
+               android:layout_marginTop="40dp"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:layout_gravity="center"
+               android:textSize="20sp"
+               android:text="阅读是心灵的旅行"
+               />
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="50dp"
+               android:layout_marginTop="10dp"
+               android:backgroundTint="@color/itemColor"
+               android:onClick="onItemAClick"
+               android:text="阅世界·背景音乐"
+               />
+       </LinearLayout>
+
    </LinearLayout>
+    <View
+        style="@style/line"
+        />
+
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:orientation="horizontal"
-        android:layout_height="150dp">
+        android:layout_height="140dp">
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="140dp"
             android:layout_height="140dp"
@@ -39,14 +63,39 @@
             android:id="@+id/write"
             android:onClick="onImageBClick"
             />
-        <TextView
-            android:layout_width="190dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_gravity="center"
-            android:text="记录本身，既已是反抗"
-            />
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="记录本身已是反抗"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/itemColor"
+                android:onClick="onItemAClick"
+                android:text="心情小记·背景音乐"
+                />
+        </LinearLayout>
+
+
     </LinearLayout>
+    <View
+        style="@style/line"
+        />
+
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:orientation="horizontal"

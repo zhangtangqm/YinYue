@@ -10,4 +10,5 @@
     <color name="titleColor">#333333</color>
     <color name="infoColor">#888888</color>
     <color name="white">#ffffff</color>
+    <color name="itemColor">#FF8C69</color>
 </resources>
