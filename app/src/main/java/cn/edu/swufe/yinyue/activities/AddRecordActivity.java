@@ -14,7 +14,7 @@ import io.realm.Realm;
 public class AddRecordActivity extends BaseAcitivity {
     private Realm mRealm;
     private EditText mAddTimeEditText,mAddRecordEdiText;
-    public String TAG="HHHHH";
+    public String TAG="AddRecordActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +23,7 @@ public class AddRecordActivity extends BaseAcitivity {
     }
     private void initView() {
 
-        initNavBar(false, "音·阅·记录心情", true);//表示后退按钮不显示，title显示登录，“我”不显示
+        initNavBar(true, "阅·心情小记", true);//表示后退按钮不显示，title显示登录，“我”不显示
 
 
     }
@@ -31,7 +31,7 @@ public class AddRecordActivity extends BaseAcitivity {
         mAddRecordEdiText=(EditText)findViewById(R.id.addRecordEditText);
         mAddTimeEditText=(EditText)findViewById(R.id.addTimeEditText);
         String addTime=mAddTimeEditText.getText().toString();
-        String addRecord=mAddTimeEditText.getText().toString();
+        String addRecord= mAddRecordEdiText.getText().toString();
 
         RecordUtils.addRecord(this,addTime,addRecord);
         // onBackPressed();

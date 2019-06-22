@@ -37,6 +37,7 @@
             android:layout_height="140dp"
             android:src="@mipmap/picture_xinqing"
             android:id="@+id/write"
+            android:onClick="onImageBClick"
             />
         <TextView
             android:layout_width="190dp"

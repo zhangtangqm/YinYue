@@ -40,4 +40,8 @@ public class MainActivity extends BaseAcitivity {
         Intent intent=new Intent(this,ReadActivity.class);
         startActivity(intent);
     }
+    public void onImageBClick(View  v){
+        Intent intent=new Intent(this,AddRecordActivity.class);
+        startActivity(intent);
+    }
 }
