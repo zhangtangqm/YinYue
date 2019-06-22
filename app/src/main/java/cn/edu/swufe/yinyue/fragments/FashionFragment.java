@@ -1,6 +1,7 @@
 package cn.edu.swufe.yinyue.fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import cn.edu.swufe.yinyue.R;
+import cn.edu.swufe.yinyue.activities.FashionListActivity;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -66,6 +69,23 @@ public class FashionFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_fashion, container, false);
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        CircleImageView button = (CircleImageView) getActivity().findViewById(R.id.fashion);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),FashionListActivity.class);
+                startActivity(intent);
+
+
+            }
+
+
+        });
     }
 
     // TODO: Rename method, update argument and hook method into UI event
