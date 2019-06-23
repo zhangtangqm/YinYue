@@ -55,7 +55,7 @@ public class UserUtils {
 
         //保存用户登录标记
 
-      /*  boolean isSave=SPUtils.saveUser(context,phone);
+       /* boolean isSave=SPUtils.saveUser(context,phone);
         if(!isSave){
             Toast.makeText(context, "系统错误，请稍后重试", Toast.LENGTH_SHORT).show();
             return false;

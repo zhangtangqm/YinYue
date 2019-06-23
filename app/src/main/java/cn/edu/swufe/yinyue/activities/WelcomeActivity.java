@@ -23,28 +23,17 @@ public class WelcomeActivity extends BaseAcitivity {
     }
     private void init(){
 
-       // final boolean isLogin=UserUtils.validateUserLogin(this);
+
         mTimer= new Timer();
         mTimer.schedule(new TimerTask() {
             @Override
             public void run() {
-                //toMain();
-              /*  if(isLogin){
-                    toMain();
-               }
-                else{
-                    toLogin();
-                }*/
+
                    toLogin();
             }
         },3*1000);
     }
-    //跳转到MainActivity
-    private void toMain(){
-        Intent intent =new Intent(this,MainActivity.class);//通过intent跳转到mainActivity
-        startActivity(intent);
-        finish();
-    }
+
     //跳转到loginActivity界面
     private void toLogin(){
         Intent intent =new Intent(this,LoginActivity.class);//通过intent跳转到LoginActivity

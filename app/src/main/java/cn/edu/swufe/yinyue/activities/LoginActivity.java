@@ -12,7 +12,7 @@ import cn.edu.swufe.yinyue.R;
 import cn.edu.swufe.yinyue.utils.UserUtils;
 
 public class LoginActivity extends BaseAcitivity{
-    //private InputView mInputPhone, mInputPassword;
+
     EditText mInputPhone;
     EditText mInputPassword;
     Button mcommitButton;
